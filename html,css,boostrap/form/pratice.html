@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+      
+        .form-group {
+            margin-bottom: 20px;
+            display: block;
+        }
+      
+        .inline-label {
+            margin-right: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form</h1>
+    <form action="" method="get" autocomplete="off">
+       
+        
+       
+        <div class="form-group">
+            <label for="fName">First name</label><br>
+            <input id="fName" type="text" pattern="[a-zA-Z]+" placeholder="add your first name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lName">Last Name</label><br>
+            <input id="lName" type="text" value="More" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mobileNum">Contact Number</label><br>
+            
+            <input type="text" id="mobileNum" pattern="^\+91-[0-9]{10}$" placeholder="+91-8989898989">
+        </div>
+
+        <div class="form-group">
+            <label for="emailInput">Email</label><br>
+            <input type="email" id="emailInput">
+        </div>
+
+        
+        <div class="form-group">
+            <label for="fileInput">Choose File</label><br>
+            <input type="file" id="fileInput">
+        </div>
+
+        <div class="form-group">
+            <label for="colorInput">Select Color</label><br>
+            <input type="color" id="colorInput" value="#00ff00">
+        </div>
+
+        
+        <div class="form-group">
+            <label><strong>Preferred Language:</strong></label><br>
+            <input type="radio" id="langEng" name="preferredLanguage" value="english" checked>
+            <label for="langEng" class="inline-label">English</label>
+            
+            <input type="radio" id="langMar" name="preferredLanguage" value="marathi">
+            <label for="langMar" class="inline-label">Marathi</label>
+            
+            <input type="radio" id="langHin" name="preferredLanguage" value="hindi">
+            <label for="langHin" class="inline-label">Hindi</label>
+        </div>
+
+        <div class="form-group">
+            <label>Select Subjects</label><br>
+            <input type="checkbox" id="eng" name="subject1" value="english">
+            <label for="eng" class="inline-label">English</label>
+            
+            <input type="checkbox" id="mar" name="subjectTwo" value="marathi">
+            <label for="mar" class="inline-label">Marathi</label>
+            
+            <input type="checkbox" id="hin" name="subjectThree" value="hindi">
+            <label for="hin" class="inline-label">Hindi</label>
+        </div>
+
+        <div class="form-group">
+            <label for="subjectSelect">Select Multiple Subjects</label><br>
+            <select name="subject" id="subjectSelect" multiple>
+                <option value="english">ENGLISH</option>
+                <option value="marathi">MARATHI</option>
+                <option value="hindi">HINDI</option>
+            </select>
+        </div>
+
+        
+        <div class="form-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Register">
+            <button type="submit">Login</button>
+            <button type="button">Update</button>
+        </div>
+
+        <div>
+            <input type="range" min="0" max="100" value="90" name="product ">
+        </div>
+       
+        
+    </form>
+    
+</body>
+</html>

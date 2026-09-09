@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.navbar {
+    height: 64px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 18px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.spotify-logo {
+    color: #1ed760;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.home-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.search-box {
+    width: 380px;
+    height: 48px;
+    background-color: #242424;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-icon {
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #b3b3b3;
+}
+
+.search-library {
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-right a:hover {
+    color: white;
+}
+
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: #777;
+}
+
+.install-app {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.signup {
+    color: white !important;
+}
+
+.login-btn {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+main {
+    display: flex;
+    gap: 8px;
+    height: calc(100vh - 64px);
+}
+
+
+
+aside {
+    width: 300px;
+    background-color: #121212;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.asidebar {
+    width: 100%;
+    min-height: 100%;
+}
+
+.library-container {
+    padding: 18px;
+}
+
+
+
+.yourLibrary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.yourLibrary p {
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.yourLibrary i {
+    margin-right: 8px;
+}
+
+.create-btn {
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.asideCard {
+    background-color: #242424;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.asideCard h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.asideCard p {
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-bottom: 18px;
+    line-height: 20px;
+}
+
+
+
+
+.action-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    transform: scale(1.03);
+}
+
+
+
+
+.sidebar-footer {
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+.lang-btn {
+    margin-top: 25px;
+    padding: 9px 17px;
+    background-color: transparent;
+    border: 1px solid #727272;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    border-color: white;
+    transform: scale(1.03);
+}
+
+.lang-btn i {
+    margin-right: 8px;
+}
+
+
+
+
+.main-content {
+    flex: 1;
+    background: linear-gradient(#202020, #121212);
+    border-radius: 8px;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+
+
+
+.cardContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #282828;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.imgCard {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.playBTN {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: #1ed760;
+    color: black;
+
+    font-size: 17px;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover .playBTN {
+    opacity: 1;
+}
+
+.songName {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.artistList {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+
+
+.artists-section {
+    margin-top: 40px;
+}
+
+.artistContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    width: 180px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.artist-card:hover {
+    background-color: #282828;
+}
+
+.artist-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.artistName {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.artistType {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+.signUp {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    height: 72px;
+
+    background: linear-gradient(
+        90deg,
+        #af2896,
+        #509bf5
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 25px;
+}
+
+.preview-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.leftDiv p:last-child {
+    font-size: 13px;
+}
+
+.footer-signup-btn {
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 13px 25px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-signup-btn:hover {
+    transform: scale(1.03);
+}

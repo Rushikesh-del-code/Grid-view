@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+body {
+    background-color: #a94949; 
+    color: #ffffff; 
+    line-height: 1.6;
+}
+
+.navbarOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #161617; }
+
+    .menus {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 900px;
+}
+
+    
+
+
+

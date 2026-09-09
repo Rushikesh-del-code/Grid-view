@@ -1,0 +1,205 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000000; 
+    color: #ffffff; 
+    line-height: 1.6;
+}
+
+
+.navbarOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #161617; 
+    
+}
+
+.imgLOGO {
+    height: 30px;
+    width: auto;
+}
+
+.menus {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navItem {
+    text-decoration: none;
+    color: #a1a1a6; 
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navItem:hover {
+    color: #ff5a00; 
+}
+
+
+.headerone {
+    text-align: center;
+    padding: 60px 10%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.headerone p {
+    color: #e8e8ed;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+section h2, .subHeading {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+
+section div h4 {
+    color: #ff5a00; 
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+section div p {
+    color: #a1a1a6;
+    margin-bottom: 20px;
+}
+
+
+section ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    background-color: #161617;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+section ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #2d2d2e;
+    font-size: 15px;
+    color: #e8e8ed;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+
+.bands-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.band, .band-card {
+    background-color: #161617;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #2d2d2e;
+}
+
+.imgBand {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #000; 
+}
+
+.band h3, .band-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.band p, .band-card p {
+    font-size: 14px;
+    color: #a1a1a6;
+}
+
+
+.contactForm {
+    max-width: 500px;
+    margin: 0 auto 60px auto;
+    background-color: #161617;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contactForm div {
+    margin-bottom: 20px;
+}
+
+.labelForm {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #a1a1a6;
+}
+
+.inputClass {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    border: 1px solid #2d2d2e;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.inputClass:focus {
+    outline: none;
+    border-color: #ff5a00; 
+}
+
+textarea.inputClass {
+    height: 100px;
+    resize: vertical;
+}
+
+.btnSubmit {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff5a00; 
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btnSubmit:hover {
+    background-color: #e04f00; 
+}

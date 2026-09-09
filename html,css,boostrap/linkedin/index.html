@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>LinkedIn Mobile Layout</title>
+  <!-- FontAwesome for LinkedIn-style icons -->
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Header Bar -->
+  <header class="top-header">
+    <div class="profile-pic">
+      <!-- Replace with your profile picture URL -->
+      <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+    <div class="search-bar-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Search" class="search-input" readonly>
+    </div>
+    <div class="messaging-icon">
+      <i class="fa-solid fa-comment-dots"></i>
+    </div>
+  </header>
+
+  <!-- Sub-Navigation (For you / Network) -->
+  <nav class="sub-nav">
+    <div class="nav-tab active">For you</div>
+    <div class="nav-tab">Network</div>
+  </nav>
+
+  <!-- Main Feed Area (Middle Content) -->
+  <main class="feed-container">
+    <div class="post-card">
+      <!-- PLACE YOUR LINKEDIN POST IMAGE HERE -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVD_I9BUgo_S2ZaGEfPDoYayKsYE7MznSGa9W1lhNSgg&s=10" alt="LinkedIn Post" class="post-image">
+    </div>
+  </main>
+
+  <!-- Bottom Navigation Bar -->
+  <nav class="bottom-nav">
+    <div class="bottom-nav-item active">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </div>
+    <div class="bottom-nav-item">
+      <div class="icon-wrapper">
+        <i class="fa-solid fa-users"></i>
+        <span class="badge">6</span>
+      </div>
+      <span>My Network</span>
+    </div>
+    <div class="bottom-nav-item">
+      <i class="fa-solid fa-square-plus"></i>
+      <span>Post</span>
+    </div>
+    <div class="bottom-nav-item">
+      <div class="icon-wrapper">
+        <i class="fa-solid fa-bell"></i>
+        <span class="badge">100</span>
+      </div>
+      <span>Notifications</span>
+    </div>
+    <div class="bottom-nav-item">
+      <i class="fa-solid fa-briefcase"></i>
+      <span>Jobs</span>
+    </div>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.navbarone{
+    background-color: burlywood;
+    height: 110;
+
+}
+.logo{
+    display: inline-block;
+    width: 10%;
+
+}
+.navmenu{
+    list-style-type: none;
+}
+
+.navitem{
+    
+
+}

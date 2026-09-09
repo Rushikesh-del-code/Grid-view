@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToyShop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                Welcome you to ToyShop!
+            </div>
+
+            <div class="top-right">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Sign In / Join
+                </a>
+
+                <span>|</span>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                        USA $
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                    </ul>
+                </div>
+
+                <span>|</span>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                        🇺🇸 English
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">French</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="logo">
+                        <img src="https://demo-59.woovinapro.com/wp-content/uploads/2022/02/logo.png" alt="ToyShop Logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6 col-12 search-area">
+                    <div class="search-box">
+                        <input type="text" placeholder="Enter your search key ...">
+                        <button>Search</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="header-icons">
+                        <div>
+                            <i class="fa-solid fa-shuffle"></i>
+                            <span>0</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                            <span>1</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>0</span>
+                        </div>
+                        <strong>$0.00</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="custom-navbar">
+        <div class="container-fluid d-flex">
+            <div class="category-menu">
+                <i class="fa-solid fa-bars"></i>
+                <span>All Categories</span>
+                <i class="fa-solid fa-chevron-down small-icon"></i>
+
+                <div class="category-dropdown">
+                    <div>
+                        <h5>Baby Toys</h5>
+                        <p>Toddler Toys</p>
+                        <p>Preschool Toys</p>
+                        <p>Figures & Animals</p>
+                        <p>Pretend Play</p>
+                    </div>
+                    <div>
+                        <h5>Building Sets</h5>
+                        <p>Magnetic Sets</p>
+                        <p>Meccano</p>
+                        <p>Mega Blocks</p>
+                        <p>Mega Construx</p>
+                    </div>
+                    <div>
+                        <h5>Games & Puzzles</h5>
+                        <p>Board Games</p>
+                        <p>Classic Games</p>
+                        <p>Card Games</p>
+                        <p>Electronic Games</p>
+                    </div>
+                    <div>
+                        <h5>Kid Arts & Crafts</h5>
+                        <p>Clay & Dough</p>
+                        <p>Crafts & Activities</p>
+                        <p>Art Tables</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-area">
+                <a href="#" class="active">Home</a>
+
+                <div class="nav-dropdown">
+                    <a href="#">
+                        Shop
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#">Shop Left Sidebar</a>
+                        <a href="#">Shop Right Sidebar</a>
+                        <a href="#">Shop Full Width</a>
+                        <a href="#">Shop Both Sidebars</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#">
+                        Products
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#">Simple Product</a>
+                        <a href="#">Variable Product</a>
+                        <a href="#">Affiliate Product</a>
+                        <a href="#">Grouped Product</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#">
+                        Pages
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#">My Account</a>
+                        <a href="#">My Wishlist</a>
+                        <a href="#">My Cart</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+
+                <a href="#">Blog</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+   <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRCppyUBHaudG1BAvxEzk2cid4l-HBqccF-X4hLRr2EzahVdUJdeeWPetpAJb9j_wgWGA6qXucxqGcNY6U" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQ70LBiW44xQET1Icg9SOFd0dmDDhy9FgY4P3myoNL7a8fWgGScuz1Hqs4DE90p5LDoun_uQw7aZiXrv3Y" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTByXzwPtrriPsnb8LFamLSQALtTKI_RM6iLWNfHOM9V7o-vbjEvw_8rayV-a6x-JFjNP1Fwnr-ujKpgms" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="container ">
+    <div class="d-flex flex-row flex-nowrap gap-3 ">
+        <div class="col">
+        <div class="card h-100" style="width: 18rem;">
+  <img src="https://demo-59.woovinapro.com/wp-content/uploads/2020/11/product-10-768x768.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+
+    </div>
+  </div>
+
+  <div class="container d-flex ">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg"></div>
+        <div class="card" style="width: 18rem;">
+  <img src="https://demo-59.woovinapro.com/wp-content/uploads/2020/11/product-2-768x768.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+
+  <div class="container d-flex">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg"></div>
+        <div class="card" style="width: 18rem;">
+  <img src="https://demo-59.woovinapro.com/wp-content/uploads/2020/11/product-5-350x350.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+
+  <div class="container d-flex">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg"></div>
+        <div class="card" style="width: 18rem;">
+  <img src="https://demo-59.woovinapro.com/wp-content/uploads/2020/11/product-3-768x768.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+
+    
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content login-box">
+
+                <button type="button" class="login-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="login-content">
+
+                    <ul class="nav nav-pills login-tabs mb-4 justify-content-center" id="authTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="signin-tab" data-bs-toggle="tab" data-bs-target="#signin-pane" type="button" role="tab">Sign In</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="join-tab" data-bs-toggle="tab" data-bs-target="#join-pane" type="button" role="tab">Join Us</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="authTabContent">
+
+                        <div class="tab-pane fade show active" id="signin-pane" role="tabpanel">
+                            <h2>Welcome Back</h2>
+                            <p class="login-subtitle">Sign in to your account</p>
+
+                            <form>
+                                <div class="input-group-custom">
+                                    <input type="email" placeholder="Username or Email" required>
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+
+                                <div class="input-group-custom">
+                                    <input type="password" placeholder="Password" required>
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+
+                                <div class="remember">
+                                    <input type="checkbox" id="rememberMe">
+                                    <label for="rememberMe">Remember me</label>
+                                </div>
+
+                                <button type="submit" class="login-btn">LOG IN</button>
+
+                                <div class="forgot">
+                                    <a href="#">Lost your password?</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="join-pane" role="tabpanel">
+                            <h2>Create Account</h2>
+                            <p class="login-subtitle">Join ToyShop today</p>
+
+                            <form>
+                                <div class="input-group-custom">
+                                    <input type="text" placeholder="Full Name" required>
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+
+                                <div class="input-group-custom">
+                                    <input type="email" placeholder="Email Address" required>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+
+                                <div class="input-group-custom">
+                                    <input type="password" placeholder="Password" required>
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+
+                                <button type="submit" class="login-btn">REGISTER</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

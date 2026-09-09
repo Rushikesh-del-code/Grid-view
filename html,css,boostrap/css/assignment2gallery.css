@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.gallery {
+    width: 450px;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.gallery img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}

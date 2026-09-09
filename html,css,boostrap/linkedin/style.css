@@ -1,0 +1,179 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #252422; /* LinkedIn light gray background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 95px; /* Keeps content from hiding under fixed headers */
+  padding-bottom: 65px; /* Keeps content from hiding under bottom nav */
+}
+
+/* --- Top Header Styles --- */
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border-bottom: 1px solid #eef3f8;
+  z-index: 100;
+}
+
+.profile-pic img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.search-bar-container {
+  flex: 1;
+  margin: 0 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #2b2b2b;
+  font-size: 16px;
+}
+
+.search-input {
+  width: 100%;
+  height: 36px;
+  background-color: #edf3f8;
+  border: 1px solid #cbd4dc;
+  border-radius: 20px;
+  padding-left: 36px;
+  font-size: 15px;
+  color: #000000;
+  outline: none;
+}
+
+.messaging-icon {
+  font-size: 22px;
+  color: #666666;
+  cursor: pointer;
+}
+
+/* --- Sub-Navigation Tabs --- */
+.sub-nav {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  background-color: #ffffff;
+  display: flex;
+  border-bottom: 1px solid #eef3f8;
+  z-index: 99;
+}
+
+.nav-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  cursor: pointer;
+}
+
+.nav-tab.active {
+  color: #000000;
+  border-bottom: 2px solid #057642; /* LinkedIn active tab indicator */
+}
+
+/* --- Feed Container (Middle Image Area) --- */
+.feed-container {
+  max-width: 550px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.post-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+
+  display: block;
+  height: auto;
+}
+
+/* --- Bottom Navigation Styles --- */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #eef3f8;
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom); /* iOS home indicator spacing */
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666666;
+  font-size: 10px;
+  cursor: pointer;
+  flex: 1;
+  padding: 4px 0;
+}
+
+.bottom-nav-item i {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.bottom-nav-item.active {
+  color: #000000; /* Darker tone for selected page icon */
+}
+
+/* Notification Badges */
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #cc1016; /* Red notification color */
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1px 5px;
+  min-width: 18px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
