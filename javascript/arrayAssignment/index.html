@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Assignments (1-5)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body class="bg-light py-5">
+
+    <div class="container bg-white p-4 rounded shadow-sm border mb-4" style="max-width: 700px;">
+      <h1 class="h3 mb-3 text-primary">1. TO-DO LIST</h1>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="inputtaskElement" placeholder="Enter a new task...">
+        <button class="btn btn-primary" id="addnewtaskbtn">Add Text</button>
+        <button class="btn btn-outline-danger" id="clearAllbtn">Clear All</button>
+      </div>
+      <div id="toDos" class="list-group"></div>
+    </div>
+
+    <div class="container bg-white p-4 rounded shadow-sm border mb-4" style="max-width: 700px;">
+      <h1 class="h3 mb-3 text-success">2. Student Marks Calculator</h1>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" id="inputmarksElement" placeholder="Enter numerical marks...">
+        <button class="btn btn-success" id="addnewmarksbtn">Add Marks</button>
+        <button class="btn btn-primary" id="calculateTotalMarksbtn">Calculate</button>
+        <button class="btn btn-outline-danger" id="clearAllmarksbtn">Clear All</button>
+      </div>
+      <div id="enteredMarksTracker" class="text-muted small mb-3"></div>
+      <div id="marksdisplay"></div>
+    </div>
+
+    <div class="container bg-white p-4 rounded shadow-sm border mb-4" style="max-width: 700px;">
+      <h1 class="h3 mb-3 text-dark">3. Search in an Array</h1>
+      <div id="searchResult" class="fw-bold mb-3 text-secondary" style="min-height: 24px;"></div>
+      
+      <div class="input-group mb-2">
+        <input type="text" id="searchInput" class="form-control" placeholder="Enter car brand (e.g., audi)">
+        <button onclick="searchCar()" class="btn btn-primary" id="searchCarBtn">Search</button>
+      </div>
+      <div class="text-muted small">Available brands inside array: [Audi, BMW, Mercedes, Ford, Toyota]</div>
+    </div>
+
+    <div class="container bg-white p-4 rounded shadow-sm border mb-4" style="max-width: 700px;">
+      <h1 class="h3 mb-2 text-dark">4. Filter Even and Odd Numbers</h1>
+      
+      <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
+        <input type="number" id="singleNumberInput" class="form-control w-auto" placeholder="Enter a number" style="max-width: 180px;">
+        <button onclick="addSingleNumber()" class="btn btn-primary">Add Number</button>
+        <button onclick="showEvenNumbers()" class="btn btn-primary">Show Even</button>
+        <button onclick="showOddNumbers()" class="btn btn-primary">Show Odd</button>
+        <button onclick="clearSingleFilter()" class="btn btn-primary">Clear</button>
+      </div>
+
+      <div class="mb-3">
+        <h5 class="h6 fw-bold text-secondary mb-2">Even Numbers</h5>
+        <div id="evenNumbersOutput" class="bg-secondary-subtle border border-secondary rounded p-3" style="min-height: 48px;"></div>
+      </div>
+
+      <div>
+        <h5 class="h6 fw-bold text-secondary mb-2">Odd Numbers</h5>
+        <div id="oddNumbersOutput" class="bg-secondary-subtle border border-secondary rounded p-3" style="min-height: 48px;"></div>
+      </div>
+    </div>
+
+    <div class="container bg-white p-4 rounded shadow-sm border" style="max-width: 700px;">
+      <h1 class="h3 mb-3 text-dark">5. Sort Names Alphabetically</h1>
+      
+      <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
+        <input type="text" id="nameInput" class="form-control w-auto" placeholder="Enter a name" style="max-width: 180px;">
+        <button onclick="addName()" class="btn btn-primary">Add Name</button>
+        <button onclick="sortNames()" class="btn btn-primary">Sort</button>
+        <button onclick="resetNames()" class="btn btn-primary">Reset</button>
+      </div>
+
+      <div id="namesDisplayOutput" class="bg-secondary-subtle border border-secondary rounded p-3 text-dark" style="min-height: 48px;"></div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
